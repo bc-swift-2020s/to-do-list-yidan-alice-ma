@@ -11,7 +11,7 @@ import UIKit
 class ToDoListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
-    var toDoArray = ["Happy", "Sad", "Smile"]
+    var toDoArray = ["Learn Swift", "Build Apps", "Change the World", "Take a Vacation"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
