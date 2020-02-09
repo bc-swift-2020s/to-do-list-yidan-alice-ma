@@ -139,7 +139,11 @@
                                 <action selector="cancelButtonPressed:" destination="0dk-iI-zrW" id="ZkW-Tr-Oka"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="G41-Fy-Lab"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="G41-Fy-Lab">
+                            <connections>
+                                <segue destination="zpy-yF-Rn0" kind="unwind" unwindAction="unwindFromDetailWithSegue:" id="DwJ-De-1UV"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="datePicker" destination="Mtv-JO-0aU" id="NlO-gx-c1M"/>
@@ -149,6 +153,7 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BAz-qu-nG6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="zpy-yF-Rn0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3054.375" y="117.25352112676056"/>
         </scene>
