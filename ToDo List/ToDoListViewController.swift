@@ -27,7 +27,7 @@ class ToDoListViewController: UIViewController {
             self.tableView.reloadData()
         }
         
-        LocalNotificationManager.autherizeLocalNotification()
+        LocalNotificationManager.autherizeLocalNotifications(viewController: self)
     }
     
     
